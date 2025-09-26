@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Kontak WhatsApp & Telegram</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      color: rgb(184, 176, 176);
+      background-image: url("walp.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      padding-bottom: 80px;
+    }
+
+    /* Tulisan bergerak atas */
+    .marquee {
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      background: rgba(0,0,0,0.6);
+      padding: 10px 0;
+    }
+    .marquee span {
+      display: inline-block;
+      padding-left: 100%;
+      animation: scroll 25s linear infinite;
+      font-size: 24px;
+      font-weight: bold;
+      color: yellow;
+    }
+    @keyframes scroll {
+      0%   { transform: translateX(0); }
+      100% { transform: translateX(-100%); }
+    }
+
+    /* Judul kedap-kedip */
+    h1 {
+      margin: 20px 0;
+      font-size: 42px;
+      font-weight: bold;
+      color: rgb(242, 235, 235);
+      text-shadow: 0 0 6px black, 0 0 12px pink;
+      animation: blink 1s infinite;
+    }
+    @keyframes blink {
+      0%, 100% {
+        opacity: 1;
+        text-shadow: 0 0 6px rgb(68, 59, 59),
+                     0 0 15px pink,
+                     0 0 25px hotpink;
+      }
+      50% {
+        opacity: 0.4;
+        text-shadow: 0 0 3px black,
+                     0 0 6px pink;
+      }
+    }
+
+    /* Container utama */
+    .container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+      max-width: 600px;
+      margin: 40px auto;
+    }
+
+    .item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: rgba(142, 94, 94, 0.1);
+      padding: 15px;
+      border-radius: 15px;
+      text-decoration: none;
+      color: rgb(245, 245, 245);
+      transition: transform 0.3s, box-shadow 0.3s;
+      animation: zoomIn 1s ease forwards;
+      opacity: 0;
+    }
+
+    /* Animasi zoom saat muncul */
+    @keyframes zoomIn {
+      0% { transform: scale(0.5); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    .item img {
+      width: 100%;
+      max-width: 180px;
+      background: rgb(27, 2, 2);
+      border-radius: 15px;
+      padding: 15px;
+      box-shadow: 0 2px 5px rgb(249, 249, 249);
+      transition: transform 0.4s ease;
+    }
+
+    /* Efek hover gambar */
+    .item:hover img {
+      transform: rotate(5deg) scale(1.05);
+    }
+
+    /* Tulisan bawah gambar naik turun */
+    .item p {
+      margin-top: 12px;
+      font-size: 22px;
+      font-weight: bold;
+      text-shadow: 0 0 4px rgb(237, 234, 234);
+      animation: updown 2s infinite ease-in-out;
+    }
+    @keyframes updown {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+
+    .item:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 15px rgba(246, 243, 243, 0.5);
+    }
+
+    /* MENU NAVIGASI BAWAH */
+    .menu {
+      display: flex;
+      justify-content: space-around;
+      background: black;
+      padding: 10px 0;
+      border-top: 2px solid lime;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      z-index: 999;
+    }
+    .menu a {
+      text-decoration: none;
+      color: white;
+      flex: 1;
+    }
+    .menu-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+    .menu-item:hover {
+      transform: scale(1.1);
+      color: yellow;
+    }
+    .menu-item i {
+      font-size: 20px;
+      margin-bottom: 5px;
+    }
+
+    /* VIDEO */
+    .video-section {
+      margin: 40px auto;
+      max-width: 600px;
+      animation: fadeIn 2s ease;
+    }
+    .video-section video {
+      width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+  <!-- FontAwesome untuk ikon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Tulisan bergerak -->
+  <div class="marquee">
+    <span>📢 Selamat datang di halaman WhatsApp & Telegram 5g880! Klik logo di bawah untuk chat langsung & dapatkan welcome bonus 60% buat new member 🥰🥰</span>
+  </div>
+
+  <h1>🥰 veny & elisa 🥰</h1>
+
+  <!-- VIDEO -->
+  <div class="video-section">
+    <video controls autoplay muted loop>
+      <source src="3in1.mp4" type="video/mp4">
+      Browser Anda tidak mendukung pemutar video.
+    </video>
+  </div>
+  
+  <div class="container">
+    <!-- WhatsApp 1 -->
+    <a class="item" href="https://wa.me/+60178943150" target="_blank">
+      <img src="5g880.jpg" alt="WhatsApp 5g880">
+      <p>WhatsApp 5g880</p>
+    </a>
+
+    <!-- WhatsApp 2 -->
+    <a class="item" href="https://wa.me/+60174037383" target="_blank">
+      <img src="5g120.jpg" alt="WhatsApp 5g120">
+      <p>WhatsApp 5g120</p>
+    </a>
+
+    <!-- WhatsApp 3 -->
+    <a class="item" href="https://wa.me/+60142185745" target="_blank">
+      <img src="backup.jpg" alt="WhatsApp 5g880 backup 1">
+      <p>5g880 backup 1</p>
+    </a>
+
+    <!-- WhatsApp 4 -->
+    <a class="item" href="https://wa.me/+60179586384" target="_blank">
+      <img src="backup.jpg" alt="WhatsApp 5g880 backup 2">
+      <p>5g880 backup 2</p>
+    </a>
+
+    <!-- Telegram 1 -->
+    <a class="item" href="https://t.me/Veny5G880" target="_blank">
+      <img src="5g880.jpg" alt="Telegram 5g880">
+      <p>Telegram 5g880</p>
+    </a>
+
+    <!-- Telegram 2 -->
+    <a class="item" href="https://t.me/veny5g880group" target="_blank">
+      <img src="back.jpg" alt="Telegram payout">
+      <p>Channel Payout</p>
+    </a>
+  </div>
+
+  <!-- MENU NAVIGASI BAWAH -->
+  <div class="menu">
+    <a href="https://t.me/veny5g880group" target="_blank">
+      <div class="menu-item">
+        <i class="fa fa-home"></i>
+        <span>Telegram channel</span>
+      </div>
+    </a>
+    <a href="https://t.me/Veny5G880" target="_blank">
+      <div class="menu-item">
+        <i class="fa fa-user-plus"></i>
+        <span>Daftar</span>
+      </div>
+    </a>
+    <a href="https://t.me/Veny5G880" target="_blank">
+      <div class="menu-item">
+        <i class="fa fa-comment"></i>
+        <span>Chat</span>
+      </div>
+    </a>
+  </div>
+</body>
+</html>
