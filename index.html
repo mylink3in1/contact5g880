@@ -13,11 +13,25 @@
       font-family: Arial, sans-serif;
       text-align: center;
       color: rgb(255, 255, 255);
-      background-image: url("image.gif");
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      padding-bottom: 80px;
+      /* Background dua lapisan:
+         lapisan pertama menampilkan GIF utuh (contain),
+         lapisan kedua mengisi ruang kosong di belakang (cover). */
+      background-image:
+        url("image.gif"),
+        url("image.gif");
+      background-size:
+        contain,
+        cover;
+      background-position:
+        center center,
+        center center;
+      background-repeat:
+        no-repeat,
+        no-repeat;
+      background-attachment:
+        fixed,
+        fixed;
+      background-color: #020014;
     }
 
     .marquee {
@@ -469,5 +483,4 @@
   </div>
 </body>
 </html>
-
 
